@@ -1,0 +1,247 @@
+/* Issues I'd like to address later
+    -fixing the alignment between .avatar and .description on mobile view.
+    -updating project posts with actual projects.
+    -adding more animation and action to the page.
+*/
+body{
+    margin: auto;
+    background-color: #c7ecf1;
+    max-width: 1000px;
+
+}
+
+*{
+    font-family: 'Lora', serif;
+}
+
+
+
+/* HOME STYLING */
+
+.home {
+    position: relative;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 6px gray;
+    margin: 0;
+}
+
+
+.intro {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home a {
+    text-decoration: none;
+    border: solid white 3px;
+    padding: .5em 1em;
+    color: white;
+}
+
+.home a:hover{
+    padding: .75em 1.5em;
+    font-size: 125%;
+}
+
+/* NAVBAR STYLING */
+
+.navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    background-color: lightsalmon;
+    padding: .75em;
+    margin-top: 0;
+    border: lightsalmon 3px solid;
+}
+
+.navbar a {
+    
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 0 .5em;
+    font-size: 125%;
+}
+
+.navbar a:hover {
+    color: dimgray;
+    font-size: 150%
+}
+
+/* ABOUT STYLING */
+ .about {
+    border-bottom: solid lightsalmon 3px;
+    background-color: white;
+    border-top: white 3px solid;
+    margin-top: 0;
+    padding-bottom: 1.5em;
+ }
+
+ .profile {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+     align-content: center;
+     align-items: center;
+ }
+
+ h2 {
+     text-align: center;
+     font-size: 2em;
+     text-decoration: underline;
+     margin: 1em 1em .25em;
+    }
+
+ .avatar img {
+     width: 250px;
+     height: auto;
+     border-radius: 50%;
+     /*box-shadow: 10px 10px 10px gray;*/
+     margin: auto;
+    }
+
+ .avatar {
+     width: 50%;
+     height: auto;
+     margin: auto;
+ }
+
+ .description {
+     width: 400px;
+     height: auto;
+     margin: auto;
+     padding-top: 2em;
+     text-align: center;
+ }
+
+ .description button {
+    background-color: white;
+    border: solid black 2px;
+    border-radius: 25px;
+    padding: .5em;
+    color: black;
+    font-weight: bold;
+ }
+
+ .description h3 {
+     font-size: 1.5em;
+ }
+
+ .description img{
+     width: 25%;
+     height: auto;
+     margin: 0 3em;
+ }
+
+ .description button{
+     margin: 1em 3em;
+ }
+
+ /* FEATURED PROJECTS STYLING */
+
+ .projects {
+     padding: 1em;
+     background-color: antiquewhite;
+     border-bottom: solid dimgrey 3px;
+     margin-bottom: 0;
+
+ }
+ 
+ .portfolio {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-evenly;
+     text-align: center;
+     margin: 1em;
+ }
+
+ .project-header {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .project-header a {
+     text-align: center;
+     margin: 1em;
+     text-decoration: none;
+     border: 2px solid black;
+     padding: .5em;
+     color: black;
+     font-weight: bold;
+ }
+
+ .item {
+     position: relative;
+ }
+
+ .item a {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+     text-decoration: none;
+     color: black;
+     font-size: 1.5em;
+     width: 100%;
+     font-weight: bold;
+     visibility: hidden;
+ }
+
+ .item:hover a {
+     visibility: visible;
+
+ }
+
+ .item:hover img{
+    opacity: 75%;
+ }
+
+ .item img {
+     width: 250px;
+     height: 250px;
+ }
+
+ /* FOOTER STYLING */
+
+ .footer {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-evenly;
+     align-items: center;
+     background-color: lightsalmon;
+     padding: 0 1em;
+     color: white;
+ }
+
+ .footer img {
+     width: 75px;
+     height: auto;
+     }
+
+ .footer button {
+     background-color: lightsalmon;
+     border: solid white 2px;
+     border-radius: 25px;
+     padding: .5em;
+     color: white;
+     font-weight: bold;
+ }
+
+ .contact h2 {
+     color: white;
+     text-decoration: none;
+     padding-bottom: 0;
+ }
+
+ .contact {
+     background-color: lightsalmon;
+     margin-top: 0;
+     border: solid 1px lightsalmon;
+ }
