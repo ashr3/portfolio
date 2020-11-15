@@ -1,6 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html{
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+body{
+    margin: 0;
+    color: white;
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.parallax-wrap{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+
+}
+
+.parallax-wrap::before{
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url("/resources/pinkbg.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    transform: translateZ(-1px) scale(3);
+}
+
+.regular-wrap{
+    width: 100vw;
+    height:100vh;
+    z-index: 2;
+    position: relative;
+}
+
+header{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    line-height: 4rem;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%,-50%);
+}
+
+h1{
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px dimgray;
+}
+
+header p{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 2px dimgray;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    text-shadow: 2px 2px 2px dimgray;
+    font-size: 1.2rem;
+    border-bottom: solid white 1px;
+    padding: 0 1rem .5rem 1rem;
+}
