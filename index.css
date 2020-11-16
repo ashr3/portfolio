@@ -67,24 +67,24 @@ header{
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 5rem;
     text-shadow: 2px 2px 2px dimgray;
 }
 
 header p{
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: capitalize;
     text-shadow: 2px 2px 2px dimgray;
+    padding: .5em 0;
 }
 
 header a{
     text-decoration: none;
     color: white;
-    padding: 1rem;
     text-shadow: 2px 2px 2px dimgray;
-    font-size: 1.2rem;
-    border-bottom: solid white 1px;
-    border-top: solid white 1px;
+    font-size: 1.5rem;
+    border-bottom: solid dimgray 2px;
+    border-top: solid dimgray 2px;
     padding: .5rem 1rem .5rem 1rem;
     margin: 0 1em;
 }
@@ -150,7 +150,7 @@ h2{
 .projects{
     background-color: rgb(255, 147, 147);
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
 }
 
 .project-header{
@@ -223,6 +223,7 @@ h2{
     text-align: center;
     color:black;
     height: 40vh;
+    background-color: lightcyan;
 }
 
 .footer h2{
