@@ -172,6 +172,7 @@ h2{
     font-weight: bold;
     background-color: lightcyan;
     opacity: 75%;
+    text-align: center;
 }
 
 .gallery{
@@ -249,3 +250,50 @@ h2{
 }
 
 /*  MEDIA QUERIES  */
+
+
+@media only screen and (min-width: 500px){
+    h1{
+        font-size: 7rem;
+    }
+    header p{
+        font-size: 3rem;
+    }
+    header a{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 4rem
+    }
+    .about{
+        height: 90vh;
+    }
+    .avatar img{
+        width: 50vw;
+    }
+    .description h3{
+        font-size: 3rem;
+    }
+    .description p{
+        font-size: 2rem;
+    }
+    .description a{
+        font-size: 2.5rem;
+    }
+    .projects{
+        height: 120vh;
+    }
+    .project-header a{
+        font-size: 1.5rem;
+    }
+    .item a{
+        width: 200px;
+        height: 200px;
+        font-size: 2rem;
+    }
+    .footer{
+        height: 50vh;
+    }
+}
+
+@media only and screen (min-width: )
